@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <div class="container">
+    <img src="images/box.jpg" alt="">
+    <span id="span1">Equilibrium #3429</span>
+    <p> Our Equilibrium collection promotes balance and calm.</p>
+    <div class="flex">
+      <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+      <span class="eth">0.041 ETH</span>
+      <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+    <span class="day">3 days left</span>
+    </div>
+    <div class="flex2">
+      <img src="images/ava.png" alt="">
+      <span class="frontphoto">Creation of <span id="ju">Jules Wyvern</span> </span>
+    </div>
+    
+  </div>
+  <style>
+    .flex2 img {
+      width: 50px;
+      margin: 0;
+      
+    }
+    .frontphoto{
+      margin-left: 10px;
+    }
+    .flex2 {
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+    }
+    #ju:hover {
+      color: cyan;
+      cursor:pointer;
+    }
+    html{
+      height: 100%;
+    }
+    body,html {
+      
+      margin:0;
+      padding: 0;
+      background:hsl(217, 54%, 11%) ;
+      color: whitesmoke;
+      
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50% ,-50%);
+      
+    }
+    .container {
+      width: 340px;
+      background-color:hsl(216, 50%, 16%) ;
+      border-radius:20px;
+      box-sizing: border-box;
+      padding: 20px;
+
+    }
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      
+    }
+  #span1 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #span1:hover{
+    color: cyan;
+  }
+  p {
+    color: hsl(215, 32%, 27%);
+  }
+  .flex{
+    color: cyan;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.2px solid rgba(82, 67, 67, 0.75);
+    
+    
+  }
+  .eth {
+    flex-grow: 1;
+    line-height: 0;
+    align-self: center;
+    
+  }
+
+  .day{
+    color:hsl(215, 32%, 27%);
+  }
+  svg{
+    padding-right: 5px;
+  }
+
+  </style>
+</body>
+
+</html>
